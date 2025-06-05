@@ -1,0 +1,53 @@
+# DQ'INSIGHT: Data Quality Assessment Tool
+
+This project is a Streamlit application for performing data quality assessments on datasets. The tool allows users to upload a CSV file and provides an overview of missing data, duplicates, and other data quality issues.
+
+## Features of App
+
+- **app.py**: Main application file.
+- **data/**: Directory for storing sample datasets.
+- **utils/**: Directory containing utility functions for data loading, quality checks, and visualisation.
+- **assets/**: Directory for static files like images or custom styles.
+
+This app allows you to:
+
+- **Upload and Summarise PDF Files**:
+
+Extract and view text from PDF files.
+Generate a summary of the text.
+As an example PDF file, we have the Making-Laws.pdf file to experiment with.
+
+- **Perform Data Quality(DQ) Checks of CSV Files**:
+
+Missing Data: Identifies null or missing values.
+Outliers: Detects data points that deviate significantly.
+Inconsistencies: Flags mismatched data patterns.
+Duplications: Identifies duplicate records.
+Invalid Values: Detects out-of-range values.
+Data Type Errors: Identifies type mismatches.
+
+- **Perform Exploratory Data Analysis(EDA) of CSV Files**:
+
+Upload a CSV file and view its contents(200MB limit)
+See a default line chart of all columns.
+Customise your chart by selecting columns for X and Y axes.
+Save your customised charts.
+As an example CSV file, we have the daily-bike-share.csv file to experiment with.
+
+- **Machine Learning Functionality**:
+
+Apply machine learning with guidance on typical steps and deployment options.
+
+- **Results and Reccomendations**:
+
+After running the analysis and ML models, you will see results here, along with recommendations for next steps and deployment options.
+
+Feel free to use the sidebar to navigate through the different features.
+
+## How to Run the App
+
+1. Clone this repository.
+2. Navigate to the project directory.
+3. Create and activate a virtual environment.
+4. Install the required dependencies with `pip install -r requirements.txt`.
+5. Run the app with `streamlit run app.py`.
