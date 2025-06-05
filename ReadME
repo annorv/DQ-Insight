@@ -1,53 +1,57 @@
-# DQ'INSIGHT: Data Quality Assessment Tool
+# 📊 DQ'INSIGHT: Data Quality Assessment Tool
 
-This project is a Streamlit application for performing data quality assessments on datasets. The tool allows users to upload a CSV file and provides an overview of missing data, duplicates, and other data quality issues.
+DQ'INSIGHT is a user-friendly Streamlit application designed to assess and improve the quality of your data. Whether you're uploading a CSV or exploring a PDF, this tool offers interactive summaries, visualisations, and machine learning functionality to support your data journey.
 
-## Features of App
 
-- **app.py**: Main application file.
-- **data/**: Directory for storing sample datasets.
-- **utils/**: Directory containing utility functions for data loading, quality checks, and visualisation.
-- **assets/**: Directory for static files like images or custom styles.
+# 🚀 Features
+🔹 Project Structure
+app.py: Main Streamlit app.
+data/: Sample datasets.
+utils/: Utility functions for loading, checking, and visualising data.
+assets/: Static files (e.g., images, styles).
 
-This app allows you to:
 
-- **Upload and Summarise PDF Files**:
+# 📂 Upload and Summarise PDF Files
+Extract and view text from uploaded PDF documents.
+Automatically generate text summaries.
+Example: Try it with Making-Laws.pdf.
 
-Extract and view text from PDF files.
-Generate a summary of the text.
-As an example PDF file, we have the Making-Laws.pdf file to experiment with.
+# 📊 Data Quality (DQ) Checks on CSV Files
+Assess your dataset for:
+Missing Data: Highlights null or missing values.
+Outliers: Detects extreme values.
+Inconsistencies: Flags mismatched patterns (e.g., date formats).
+Duplications: Identifies duplicate rows.
+Invalid Values: Detects out-of-range or erroneous values.
+Data Type Errors: Highlights column-type mismatches.
 
-- **Perform Data Quality(DQ) Checks of CSV Files**:
+# 📈 Exploratory Data Analysis (EDA)
+Upload CSV files (up to 200MB).
+Preview data and view default visualisations.
+Customise charts by selecting X and Y axes.
+Save your customised visualisations.
+Example: Use the daily-bike-share.csv file provided.
 
-Missing Data: Identifies null or missing values.
-Outliers: Detects data points that deviate significantly.
-Inconsistencies: Flags mismatched data patterns.
-Duplications: Identifies duplicate records.
-Invalid Values: Detects out-of-range values.
-Data Type Errors: Identifies type mismatches.
+# 🤖 Machine Learning Functionality
+Step-by-step guide to applying machine learning to your dataset.
+Includes deployment suggestions and best practices.
 
-- **Perform Exploratory Data Analysis(EDA) of CSV Files**:
+# 📋 Results & Recommendations
+Review your results after running checks or models.
+Get actionable recommendations for data improvement or model deployment.
+💡 Use the sidebar to navigate through all features.
 
-Upload a CSV file and view its contents(200MB limit)
-See a default line chart of all columns.
-Customise your chart by selecting columns for X and Y axes.
-Save your customised charts.
-As an example CSV file, we have the daily-bike-share.csv file to experiment with.
+# 🛠️ How to Run the App
+1. Clone the repository:
+git clone https://github.com/annorv/dqinsight.git
+cd dqinsight
 
-- **Machine Learning Functionality**:
+2. Create and activate a virtual environment:
+python -m venv venv
+source venv/bin/activate   # On Windows: venv\Scripts\activate
 
-Apply machine learning with guidance on typical steps and deployment options.
+3. Install the dependencies:
+pip install -r requirements.txt
 
-- **Results and Reccomendations**:
-
-After running the analysis and ML models, you will see results here, along with recommendations for next steps and deployment options.
-
-Feel free to use the sidebar to navigate through the different features.
-
-## How to Run the App
-
-1. Clone this repository.
-2. Navigate to the project directory.
-3. Create and activate a virtual environment.
-4. Install the required dependencies with `pip install -r requirements.txt`.
-5. Run the app with `streamlit run app.py`.
+4. Run the app:
+streamlit run app.py
